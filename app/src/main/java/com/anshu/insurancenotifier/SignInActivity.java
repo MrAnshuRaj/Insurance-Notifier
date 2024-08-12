@@ -54,11 +54,11 @@ public class SignInActivity extends AppCompatActivity {
         });
     }
     private void signInUser() {
-        final String username = usernameEditText.getText().toString().trim();
+        final String email = usernameEditText.getText().toString().trim();
         final String password = passwordEditText.getText().toString().trim();
 
-        if (TextUtils.isEmpty(username)) {
-            usernameEditText.setError("Username is required");
+        if (TextUtils.isEmpty(email)) {
+            usernameEditText.setError("Email is required");
             return;
         }
         if (TextUtils.isEmpty(password)) {
@@ -66,7 +66,7 @@ public class SignInActivity extends AppCompatActivity {
             return;
         }
         firestore.collection("users")
-                .whereEqualTo("name", username)
+                .whereEqualTo("email", email)
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
