@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pdf  Content"
+        android:textColor="#F44336"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pdfFileName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/pdfThumbnail"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="PDF Thumbnail"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectPdfBtn"
+        app:srcCompat="@drawable/pdf" />
+
+    <TextView
+        android:id="@+id/pdfFileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="PDF File Name"
+        android:textColor="#F44336"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/pdfThumbnail"
+        app:layout_constraintStart_toStartOf="@+id/pdfThumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/pdfThumbnail" />
+
+    <Button
+        android:id="@+id/selectPdfBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonback"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Select Pdf"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/listPageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonback"
+        android:padding="15dp"
+        android:text="List Page"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

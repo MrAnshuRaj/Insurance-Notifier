@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/schemeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scheme Name"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/renewalDate"
+        android:layout_width="wrap_content"
+        android:textColor="#FA7146"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Renewal Date"/>
+
+    <TextView
+        android:id="@+id/daysRemaining"
+        android:layout_width="wrap_content"
+        android:textColor="#FA7146"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Days Remaining"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        app:dividerColor="#FA7146"/>
+
+</LinearLayout>

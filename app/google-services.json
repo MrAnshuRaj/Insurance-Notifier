@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "773098632998",
+    "project_id": "insurance-free-c8707",
+    "storage_bucket": "insurance-free-c8707.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773098632998:android:5f547e9def29ac3dcb33e7",
+        "android_client_info": {
+          "package_name": "com.anshu.insurancenotifier"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3chT6PxhO-F-hDQPcc_hXm0Le3m55C9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
